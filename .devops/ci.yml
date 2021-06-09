@@ -14,7 +14,7 @@ pr:
       - main
 
 stages:
-  - stage: Hello-World
+  - stage: Hello_World
     jobs:
       - job: Foo
         steps:
