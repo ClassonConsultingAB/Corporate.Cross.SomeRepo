@@ -3,7 +3,10 @@ name: Dummy DB
 pool:
   vmImage: ubuntu-latest
 
-trigger: none
+trigger:
+  paths:
+    include:
+      - db
 pr: none
 
 stages:

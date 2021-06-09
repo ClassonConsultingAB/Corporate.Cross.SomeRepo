@@ -7,11 +7,17 @@ trigger:
   branches:
     include:
       - main
+  paths:
+    exclude:
+      - db
 
 pr:
   branches:
     include:
       - main
+  paths:
+    exclude:
+      - db
 
 stages:
   - stage: Hello_World
