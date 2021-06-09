@@ -4,9 +4,14 @@ pool:
   vmImage: ubuntu-latest
 
 trigger:
+  branches:
+    include:
+      - master
   paths:
     include:
-      - db
+      - .devops/db.yml
+      - db/*
+
 pr: none
 
 stages:

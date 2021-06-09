@@ -8,16 +8,18 @@ trigger:
     include:
       - main
   paths:
-    exclude:
-      - db
+    include:
+      - .devops/ci.yml
+      - src/*
 
 pr:
   branches:
     include:
       - main
   paths:
-    exclude:
-      - db
+    include:
+      - .devops/ci.yml
+      - src/*
 
 stages:
   - stage: Hello_World
