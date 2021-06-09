@@ -1,0 +1,14 @@
+name: Dummy DB
+
+pool:
+  vmImage: ubuntu-latest
+
+trigger: none
+pr: none
+
+stages:
+  - stage: Hello World
+    jobs:
+      - job: Foo
+        steps:
+          - script: echo Hello World!
