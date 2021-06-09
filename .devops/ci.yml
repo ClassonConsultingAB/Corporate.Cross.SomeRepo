@@ -1,0 +1,21 @@
+name: Dummy CI
+
+pool:
+  vmImage: ubuntu-latest
+
+trigger:
+  branches:
+    include:
+      - main
+
+pr:
+  branches:
+    include:
+      - main
+
+stages:
+  - stage: Hello_World
+    jobs:
+      - job: Foo
+        steps:
+          - script: echo Hello World!
