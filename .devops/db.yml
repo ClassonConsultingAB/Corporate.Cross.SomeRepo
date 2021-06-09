@@ -9,6 +9,7 @@ trigger:
       - master
   paths:
     include:
+      - .devops/db.yml
       - db
 pr: none
 

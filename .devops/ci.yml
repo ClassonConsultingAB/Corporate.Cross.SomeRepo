@@ -8,8 +8,9 @@ trigger:
     include:
       - main
   paths:
-    exclude:
-      - db
+    include:
+      - .devops/ci.yml
+      - src
 
 pr:
   branches:
