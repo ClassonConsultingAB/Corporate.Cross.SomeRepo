@@ -10,7 +10,7 @@ trigger:
   paths:
     include:
       - .devops/db.yml
-      - db
+      - db/*
 pr: none
 
 stages:
