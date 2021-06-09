@@ -11,6 +11,7 @@ trigger:
     include:
       - .devops/db.yml
       - db/*
+
 pr: none
 
 stages:
