@@ -6,17 +6,17 @@ pool:
 trigger:
   branches:
     include:
-      - master
+    - main
   paths:
     include:
-      - .devops/db.yml
-      - db/*
+    - .devops/db.yml
+    - db/*
 
 pr: none
 
 stages:
   - stage: Hello_World
     jobs:
-      - job: Foo
-        steps:
-          - script: echo Hello World!
+    - job: Foo
+      steps:
+      - script: echo Hello World!
