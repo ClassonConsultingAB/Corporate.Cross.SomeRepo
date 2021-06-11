@@ -3,23 +3,8 @@ name: Dummy CI
 pool:
   vmImage: ubuntu-latest
 
-trigger:
-  branches:
-    include:
-    - main
-  paths:
-    include:
-    - .devops/ci.yml
-    - src/*
-
-pr:
-  branches:
-    include:
-      - main
-  paths:
-    include:
-    - .devops/ci.yml
-    - src/*
+trigger: none
+pr: none
 
 stages:
   - stage: Hello_World

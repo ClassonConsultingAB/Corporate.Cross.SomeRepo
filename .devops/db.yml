@@ -3,15 +3,7 @@ name: Dummy DB
 pool:
   vmImage: ubuntu-latest
 
-trigger:
-  branches:
-    include:
-    - main
-  paths:
-    include:
-    - .devops/db.yml
-    - db/*
-
+trigger: none
 pr: none
 
 stages:
