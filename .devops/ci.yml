@@ -3,9 +3,6 @@ name: Dummy CI
 pool:
   vmImage: ubuntu-latest
 
-trigger: none
-pr: none
-
 stages:
   - stage: Hello_World
     jobs:
