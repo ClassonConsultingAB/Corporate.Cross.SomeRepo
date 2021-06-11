@@ -26,4 +26,4 @@ stages:
     jobs:
       - job: Foo
         steps:
-          - script: echo Hello World!
+          - script: echo Hello World2!
