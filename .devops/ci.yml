@@ -6,11 +6,11 @@ pool:
 trigger:
   branches:
     include:
-    - main
+      - main
   paths:
     include:
-    - .devops/ci.yml
-    - src/*
+      - .devops/ci.yml
+      - src/*
 
 pr:
   branches:
@@ -18,12 +18,12 @@ pr:
       - main
   paths:
     include:
-    - .devops/ci.yml
-    - src/*
+      - .devops/ci.yml
+      - src/*
 
 stages:
   - stage: Hello_World
     jobs:
-    - job: Foo
-      steps:
-      - script: echo Hello World2!
+      - job: Foo
+        steps:
+          - script: echo Hello World!
