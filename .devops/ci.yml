@@ -31,6 +31,8 @@ stages:
             inputs:
               pwsh: true
               script: |
-                throw "somthing bad happenend"
+                Write-Host 'Sleeping...'
+                Start-Sleep -Seconds 30
+                throw 'Somthing bad happenend'
               failOnStderr: true
               targetType: inline
