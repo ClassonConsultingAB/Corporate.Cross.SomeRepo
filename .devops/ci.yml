@@ -27,3 +27,10 @@ stages:
       - job: Foo
         steps:
           - script: echo Hello World2!
+          - task: PowerShell@2
+            inputs:
+              pwsh: true
+              script: |
+                throw "somthing bad happenend"
+              failOnStderr: true
+              targetType: inline
