@@ -27,3 +27,12 @@ stages:
       - job: Foo
         steps:
           - script: echo Hello World2!
+          - task: PowerShell@2
+            inputs:
+              pwsh: true
+              script: |
+                # Write-Host 'Sleeping...'
+                # Start-Sleep -Seconds 30
+                # throw 'Somthing bad happenend'
+              failOnStderr: true
+              targetType: inline
