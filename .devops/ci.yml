@@ -33,6 +33,6 @@ stages:
               script: |
                 # Write-Host 'Sleeping...'
                 # Start-Sleep -Seconds 30
-                # throw 'Somthing bad happenend'
+                throw 'Somthing bad happenend'
               failOnStderr: true
               targetType: inline
